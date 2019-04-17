@@ -1,0 +1,40 @@
+{
+  "name": "aft",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "availity-reactstrap-validation": "^2.5.0",
+    "axios": "^0.18.0",
+    "create-react-class": "^15.6.3",
+    "immutability-helper": "^2.9.0",
+    "moment": "^2.23.0",
+    "moment-timezone": "^0.5.23",
+    "popper.js": "^1.14.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-bootstrap": "^0.32.4",
+    "react-bootstrap-table": "^4.3.1",
+    "react-cookie": "^2.2.0",
+    "react-datepicker": "^1.8.0",
+    "react-dom": "^16.7.0",
+    "react-file-download": "^0.3.5",
+    "react-notifications-component": "^1.0.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8",
+    "react-table": "^6.8.6",
+    "reactstrap": "^6.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:8080/",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

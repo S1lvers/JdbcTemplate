@@ -1,0 +1,70 @@
+buildscript {
+    ext {
+        springBootVersion = '2.1.3.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'war'
+
+
+group = 'sberdata'
+version = '0.1.0'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+
+    runtime 'org.springframework.boot:spring-boot-devtools'
+    runtime 'com.h2database:h2'
+
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.5'
+    compile group: 'commons-io', name: 'commons-io', version: '2.4'
+    compile group: 'org.modelmapper.extensions', name: 'modelmapper-spring', version: '2.1.0'
+    compile 'org.projectlombok:lombok:1.18.6'
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+bootRun {
+    systemProperties = System.properties
+}
+
+processResources {
+    println "Do filesMatching"
+    filesMatching('application.properties') {
+        expand "version": "$version"
+    }
+    println "Done filesMatching"
+}
+
+processResources << {
+    println "Start of coping front files"
+    delete "build/resources/main/static"
+    copy {
+        from "front/build/static"
+        into "build/resources/main/static"
+    }
+    println "End of coping front files"
+}

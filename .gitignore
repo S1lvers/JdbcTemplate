@@ -1,0 +1,60 @@
+.gradle
+
+front/node_modules/*
+front/public/*
+
+.idea/
+
+.idea/httpRequests/*
+
+*.jfr
+*.iml
+
+/out/
+/gradle/
+
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+/xml
+/storage
+/dds-exchange
+/src/main/resources/static
+
+
+### Eclipse template
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+package-lock.json
+
+src/main/resources/static
+

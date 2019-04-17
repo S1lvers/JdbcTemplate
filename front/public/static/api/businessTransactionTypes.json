@@ -1,0 +1,10 @@
+[
+  {
+    "key": "TRANSACTIONTYPE_INTERNAL",
+    "value": "Перевод между счетами депонента в рамках депозитария"
+  },
+  {
+    "key": "TRANSACTIONTYPE_OTHER",
+    "value": "Другое"
+  }
+]
