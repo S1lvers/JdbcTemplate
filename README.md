@@ -26,3 +26,12 @@ spring.datasource.password=pass
 spring.datasource.driverClassName=org.h2.Driver
 
 
+
+Для добавления записи необходимо записать ее в json-образном виде (иначе будет ошибка, невыводимая yet).
+
+Например для таблицы STUDENT (что по умолчанию деплоится) добавление записи происходит строкой {"name": "John", "surname": "Smith"}.
+
+В h2-console чтобы зайте нужно в url ввести jdbc:h2:mem:sbr, login: user, password: pass.
+
+
+
