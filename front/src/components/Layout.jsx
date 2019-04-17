@@ -20,7 +20,7 @@ export default class Layout extends React.Component {
 
                         </Col>
                         <Col md={5} className={"text-center"}>
-                            <LinkButton to={"/"} title={"321"}/>
+                            <LinkButton to={"/"} title={"Скоро тут будет загрузка файла"}/>
                         </Col>
                     </FormGroup>
                 </Container>
