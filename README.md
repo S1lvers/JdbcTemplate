@@ -1,5 +1,5 @@
-# sberdata
-Репозиторий для тестового задания
+# JdbcTemplateExample
+Simple jdbc template example
 
 # Запуск проекта
 Преподготовка: 
